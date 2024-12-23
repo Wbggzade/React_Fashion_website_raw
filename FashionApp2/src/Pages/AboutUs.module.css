@@ -1,0 +1,107 @@
+
+
+.aboutSection {
+  background-color: #fdfdfd;
+  padding: 100px 0;
+}
+
+.innerContainer, .innerContainerReverse {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.imageContainer {
+  width: 45%;
+  padding: 20px;
+}
+
+.image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.textContainer, .textContainerReverse {
+  width: 45%;
+  padding: 20px;
+}
+
+.textContainer h1 {
+  margin-bottom: 30px;
+  font-size: 30px;
+  font-weight: 900;
+}
+
+.text {
+  font-size: 13px;
+  color: #545454;
+  line-height: 30px;
+  text-align: justify;
+  margin-bottom: 40px;
+}
+
+.skills {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 700;
+  font-size: 13px;
+}
+
+/* New section for the bio text */
+.bioSection {
+  padding: 20px;
+  background-color: #f4f4f4;
+  border-radius: 8px;
+}
+
+.bioText {
+  font-size: 15px;
+  color: #545454;
+  line-height: 30px;
+  text-align: justify;
+  margin-bottom: 20px;
+}
+
+.innerContainerReverse {
+  flex-direction: row-reverse; /* This reverses the layout */
+}
+
+.textContainerReverse {
+  order: 1; /* Ensures text is on the left when reversed */
+}
+
+@media screen and (max-width: 1200px) {
+  .innerContainer, .innerContainerReverse {
+    flex-direction: column;
+    align-items: center;
+  }
+  .imageContainer, .textContainer, .textContainerReverse {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .aboutSection {
+    padding: 80px 20px;
+  }
+  .innerContainer, .innerContainerReverse {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .aboutSection {
+    padding: 60px 10px;
+  }
+  .innerContainer, .innerContainerReverse {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+
+
+
